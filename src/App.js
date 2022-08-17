@@ -117,16 +117,18 @@ function App() {
                 autoComplete="off"
                 onChange={handleChange}
                 value={userData.name}
+                className="input-texts"
               />
             </div>
             <div className="email">
               <label>Email:</label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 autoComplete="off"
                 onChange={handleChange}
                 value={userData.email}
+                className="input-texts"
               />
             </div>
             <div className="website">
@@ -137,6 +139,7 @@ function App() {
                 autoComplete="off"
                 onChange={handleChange}
                 value={userData.website}
+                className="input-texts"
               />
             </div>
             <div className="image">
@@ -147,6 +150,7 @@ function App() {
                 autoComplete="off"
                 onChange={handleChange}
                 value={userData.image}
+                className="input-texts"
               />
             </div>
           </div>
@@ -212,8 +216,8 @@ function App() {
             </button>
           </div>
         </form>
-        <hr />
       </div>
+      <hr />
       <div className="users">
         {users.map((user) => (
           <UserCard
